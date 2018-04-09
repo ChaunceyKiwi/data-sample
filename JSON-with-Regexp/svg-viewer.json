@@ -1,0 +1,26 @@
+{
+  "menu": {
+    "header_a1": "SVG Viewer",
+    "items": [
+      {
+        "id_b2": "Open"
+      },
+      {
+        "id_c3": "OpenNew",
+        "label_d4": "Open New"
+      },
+      {
+        "id_a8": "ZoomIn",
+        "label_g5": "Zoom In"
+      },
+      {
+        "id_123": "ZoomOut",
+        "label_233": "Zoom Out"
+      },
+      {
+        "id_abc": "OriginalView",
+        "label_def": "Original View"
+      }
+    ]
+  }
+}

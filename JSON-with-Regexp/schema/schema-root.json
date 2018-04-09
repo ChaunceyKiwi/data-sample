@@ -1,0 +1,40 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "properties": {
+    "menu": {
+      "$id": "/properties/menu",
+      "type": "object",
+      "additionalProperties":false,
+      "patternProperties": {
+        "^header_[a-z0-9]+$": {
+          "$id": "/properties/menu/properties/header",
+          "type": "string",
+          "title": "The Header Schema ",
+          "default": ""
+        },
+        "items": {
+          "$id": "/properties/menu/properties/items",
+          "type": "array",
+          "items": {
+            "$id": "/properties/menu/properties/items/items",
+            "type": "object",
+            "additionalProperties":false,
+            "patternProperties": {
+              "^id_[a-z0-9]+$": {
+                "$id": "/properties/menu/properties/items/items/properties/id",
+                "type": "string",
+                "title": "The Id Schema ",
+                "default": ""
+              },
+              "^label_[a-z0-9]+$": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
